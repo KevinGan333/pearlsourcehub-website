@@ -51,7 +51,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block">
               <Image
-                src="/brand/pearlsourcehub-logo-light.svg"
+                src="/brand/pearlsourcehub-logo-official-light.svg"
                 alt="PearlSourceHub"
                 width={320}
                 height={40}

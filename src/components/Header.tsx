@@ -17,7 +17,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
-            src="/brand/pearlsourcehub-logo.svg"
+            src="/brand/pearlsourcehub-logo-official.svg"
             alt="PearlSourceHub"
             width={320}
             height={40}
