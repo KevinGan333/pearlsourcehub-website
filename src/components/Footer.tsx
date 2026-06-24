@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { siteConfig } from "@/data/site";
 
 export default function Footer() {
@@ -48,11 +49,16 @@ export default function Footer() {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-6">
           {/* Brand + Contact */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-2 text-lg font-bold text-white">
-              <span className="flex h-8 w-8 items-center justify-center rounded-md bg-amber-600 text-sm font-bold text-white">PS</span>
-              PearlSourceHub
+            <Link href="/" className="inline-block">
+              <Image
+                src="/brand/pearlsourcehub-logo-light.svg"
+                alt="PearlSourceHub"
+                width={320}
+                height={40}
+                className="h-7 w-auto"
+              />
             </Link>
-            <p className="mt-3 text-sm leading-relaxed text-slate-400">
+            <p className="mt-4 text-sm leading-relaxed text-slate-400">
               {siteConfig.description}
             </p>
             <div className="mt-4 space-y-1.5">

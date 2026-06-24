@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { mainNavItems, ctaNavItems } from "@/data/navigation";
 
 export default function Header() {
@@ -14,14 +15,15 @@ export default function Header() {
         aria-label="Main navigation"
       >
         {/* Logo */}
-        <Link
-          href="/"
-          className="flex items-center gap-2 text-xl font-bold text-slate-900"
-        >
-          <span className="flex h-8 w-8 items-center justify-center rounded-md bg-amber-600 text-sm font-bold text-white">
-            PS
-          </span>
-          <span className="hidden sm:inline">PearlSourceHub</span>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/brand/pearlsourcehub-logo.svg"
+            alt="PearlSourceHub"
+            width={320}
+            height={40}
+            className="h-7 sm:h-8 w-auto"
+            priority
+          />
         </Link>
 
         {/* Desktop nav */}
