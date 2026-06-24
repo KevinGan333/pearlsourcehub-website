@@ -11,17 +11,17 @@ export default function Header() {
   return (
     <header className="w-full border-b border-slate-200 bg-white">
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3.5 sm:px-6 lg:px-8"
         aria-label="Main navigation"
       >
         {/* Logo */}
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-center shrink-0">
           <Image
-            src="/brand/pearlsourcehub-logo-official.svg"
+            src="/brand/pearlsourcehub-logo-official-cropped.svg"
             alt="PearlSourceHub"
-            width={320}
-            height={40}
-            className="h-7 sm:h-8 w-auto"
+            width={450}
+            height={56}
+            className="h-9 sm:h-10 md:h-11 w-auto max-w-[200px] sm:max-w-[220px] object-contain"
             priority
           />
         </Link>
