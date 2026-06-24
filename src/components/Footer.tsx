@@ -49,13 +49,13 @@ export default function Footer() {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-6">
           {/* Brand + Contact */}
           <div className="lg:col-span-1">
-            <Link href="/" className="inline-flex items-center rounded-xl bg-white/10 px-4 py-3 ring-1 ring-white/10">
+            <Link href="/" className="inline-flex items-center rounded-xl bg-white/95 px-4 py-3 shadow-sm">
               <Image
-                src="/brand/pearlsourcehub-logo-official-cropped-light.svg"
+                src="/brand/pearlsourcehub-logo-official-footer.svg"
                 alt="PearlSourceHub"
-                width={450}
-                height={56}
-                className="h-10 sm:h-11 md:h-12 w-auto max-w-[200px] sm:max-w-[240px] object-contain"
+                width={895}
+                height={292}
+                className="w-[190px] sm:w-[240px] lg:w-[270px] h-auto max-h-[88px] object-contain"
               />
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-slate-400">

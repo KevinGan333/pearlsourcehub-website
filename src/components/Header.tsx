@@ -17,11 +17,11 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center shrink-0">
           <Image
-            src="/brand/pearlsourcehub-logo-official-cropped.svg"
+            src="/brand/pearlsourcehub-logo-official-header.svg"
             alt="PearlSourceHub"
-            width={450}
-            height={56}
-            className="h-9 sm:h-10 md:h-11 w-auto max-w-[200px] sm:max-w-[220px] object-contain"
+            width={895}
+            height={292}
+            className="w-[155px] sm:w-[180px] lg:w-[210px] h-auto max-h-14 object-contain"
             priority
           />
         </Link>
