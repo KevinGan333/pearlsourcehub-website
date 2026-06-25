@@ -12,6 +12,10 @@ export const mainPages = [
   { path: "/quote", priority: 0.8, changefreq: "weekly" as const },
 ];
 
+export const resourceDetailPages = [
+  { path: "/resources/how-to-hire-a-reliable-china-product-sourcing-agent-in-2026", priority: 0.7, changefreq: "monthly" as const },
+];
+
 export const locationPages = [
   { path: "/locations/shenzhen-electronics-sourcing", priority: 0.8, changefreq: "monthly" as const },
   { path: "/locations/dongguan-factory-audit", priority: 0.8, changefreq: "monthly" as const },

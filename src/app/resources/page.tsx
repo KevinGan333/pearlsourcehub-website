@@ -16,6 +16,7 @@ const featuredResources = [
 
 const resourceCategories = [
   { category: "Supplier Verification", resources: [
+    { title: "How to Hire a Reliable China Product Sourcing Agent in 2026", problem: "Looking for a sourcing agent but not sure how to evaluate and verify them?", format: "Guide", href: "/resources/how-to-hire-a-reliable-china-product-sourcing-agent-in-2026" },
     { title: "Supplier Verification Checklist for Guangdong Manufacturers", problem: "Not sure how to check if a supplier is a real manufacturer?", format: "Checklist" },
     { title: "How to Identify Trading Companies vs. Manufacturers", problem: "Worried about paying middleman markups without real factory access?", format: "Guide" },
     { title: "Factory Visit Checklist: What to Check On-Site", problem: "Planning a factory visit but not sure what to look for?", format: "Checklist" },
@@ -97,7 +98,7 @@ export default function ResourcesPage() {
                       <span className="text-xs font-semibold uppercase tracking-wider text-amber-600">{r.format}</span>
                       <h4 className="mt-2 text-sm font-semibold text-slate-900 leading-snug">{r.title}</h4>
                       <p className="mt-2 flex-1 text-sm text-slate-600 leading-relaxed">{r.problem}</p>
-                      <Link href="/contact" className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-amber-600 hover:text-amber-700 transition-colors">Request this resource<svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" /></svg></Link>
+                      <Link href={r.href || "/contact"} className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-amber-600 hover:text-amber-700 transition-colors">{r.href ? "Read guide" : "Request this resource"}<svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" /></svg></Link>
                     </div>
                   ))}
                 </div>
