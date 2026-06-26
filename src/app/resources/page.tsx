@@ -27,6 +27,7 @@ const resourceCategories = [
     { title: "Quality System Audit: What to Evaluate Beyond ISO Certificates", problem: "Factory has ISO 9001 but you want deeper assessment?", format: "Guide" },
   ]},
   { category: "Product Development", resources: [
+    { title: "7 Proven Product Sourcing Strategies to Scale Your Ecommerce Business", problem: "Looking for a structured approach to product sourcing for your ecommerce brand?", format: "Guide", href: "/resources/product-sourcing" },
     { title: "Product Brief Template for Accurate Factory Quotes", problem: "Getting inconsistent quotes because your product brief is unclear?", format: "Template" },
     { title: "Design for Manufacturing Checklist", problem: "Design files ready but not sure if they are production-ready?", format: "Checklist" },
     { title: "Sample Approval Checklist Before Mass Production", problem: "Received samples — how to evaluate them systematically?", format: "Checklist" },
