@@ -1,0 +1,33 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pearl" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="42%" stop-color="#f4e8d5"/>
+      <stop offset="72%" stop-color="#d4b98d"/>
+      <stop offset="100%" stop-color="#fff7ea"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f59a18"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="250" fill="#0b3557"/>
+  <!-- Pearl -->
+  <circle cx="256" cy="220" r="90" fill="url(#pearl)" stroke="#fffaf0" stroke-width="6"/>
+  <circle cx="226" cy="185" r="22" fill="#ffffff" opacity="0.5"/>
+  <!-- Orange orbit -->
+  <path d="M100 360 C200 460 380 430 440 260" fill="none" stroke="url(#orange)" stroke-width="28" stroke-linecap="round"/>
+  <path d="M420 230 C435 248 445 268 448 285" fill="none" stroke="#d97706" stroke-width="16" stroke-linecap="round"/>
+  <!-- Sourcing route dots -->
+  <circle cx="130" cy="300" r="22" fill="#d97706"/>
+  <circle cx="230" cy="250" r="22" fill="#d97706"/>
+  <circle cx="330" cy="200" r="22" fill="#d97706"/>
+  <!-- Connected line -->
+  <path d="M130 300 L230 250 L330 200" fill="none" stroke="#f59a18" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Ship base -->
+  <path d="M90 390 C140 440 310 450 410 390 L450 340 C370 360 240 355 130 320 C118 340 100 365 90 390 Z" fill="#ffffff" opacity="0.9"/>
+  <!-- Globe arcs -->
+  <path d="M120 280 C120 150 200 80 310 95 C385 105 430 160 450 230" fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round" opacity="0.8"/>
+  <path d="M145 210 C210 130 320 125 395 175" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+</svg>
