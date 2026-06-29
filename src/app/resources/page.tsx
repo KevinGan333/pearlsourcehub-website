@@ -22,6 +22,7 @@ const resourceCategories = [
     { title: "Factory Visit Checklist: What to Check On-Site", problem: "Planning a factory visit but not sure what to look for?", format: "Checklist" },
   ]},
   { category: "Factory Audit", resources: [
+    { title: "Is Your Supplier Real? Why Every Importer Needs a China Factory Audit Service", problem: "Not sure if your supplier is a real manufacturer or a trading company?", format: "Guide", href: "/resources/china-factory-audit-service" },
     { title: "Factory Audit Checklist for First-Time Buyers", problem: "First production order and need to assess factory capability?", format: "Checklist" },
     { title: "Dongguan Factory Audit Guide: Molds, Plastics, and Hardware", problem: "Sourcing tooling or plastic parts in Dongguan?", format: "Guide" },
     { title: "Quality System Audit: What to Evaluate Beyond ISO Certificates", problem: "Factory has ISO 9001 but you want deeper assessment?", format: "Guide" },
