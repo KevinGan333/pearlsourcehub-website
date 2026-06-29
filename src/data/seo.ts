@@ -16,6 +16,7 @@ export const resourceDetailPages = [
   { path: "/resources/how-to-hire-a-reliable-china-product-sourcing-agent-in-2026", priority: 0.7, changefreq: "monthly" as const },
   { path: "/resources/product-sourcing", priority: 0.7, changefreq: "monthly" as const },
   { path: "/resources/china-factory-audit-service", priority: 0.7, changefreq: "monthly" as const },
+  { path: "/resources/china-factory-audit-checklist-for-importers", priority: 0.7, changefreq: "monthly" as const },
 ];
 
 export const locationPages = [
