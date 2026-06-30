@@ -16,6 +16,7 @@ const featuredResources = [
 
 const resourceCategories = [
   { category: "Supplier Verification", resources: [
+    { title: "A Complete Guide to Hiring a China Sourcing Agent for Dropshipping", problem: "Running a dropshipping store and need a reliable China sourcing agent?", format: "Guide", href: "/resources/china-sourcing-agent-dropshipping" },
     { title: "How to Hire a Reliable China Product Sourcing Agent in 2026", problem: "Looking for a sourcing agent but not sure how to evaluate and verify them?", format: "Guide", href: "/resources/how-to-hire-a-reliable-china-product-sourcing-agent-in-2026" },
     { title: "Supplier Verification Checklist for Guangdong Manufacturers", problem: "Not sure how to check if a supplier is a real manufacturer?", format: "Checklist" },
     { title: "How to Identify Trading Companies vs. Manufacturers", problem: "Worried about paying middleman markups without real factory access?", format: "Guide" },
