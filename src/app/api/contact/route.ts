@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import { createAdminClient } from "@/lib/supabase/admin";
 import { contactSchema } from "@/lib/validators";
 import { contactEmailTemplate } from "@/lib/emailTemplates";
 
@@ -51,6 +52,14 @@ export async function POST(request: Request) {
       subject: "New Contact Inquiry - PearlSourceHub",
       ...contactEmailTemplate(data, timestamp),
     });
+
+    // Save to Supabase
+    try { const adminClient = createAdminClient();
+      await adminClient.from("inquiries").insert({
+        source: "contact", name: `${data.firstName} ${data.lastName}`, email: data.email,
+        company: data.company || null, message: data.message,
+      });
+    } catch { /* non-critical */ }
 
     return NextResponse.json({ success: true });
   } catch {

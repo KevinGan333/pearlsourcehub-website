@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import { createAdminClient } from "@/lib/supabase/admin";
 import { quoteSchema } from "@/lib/validators";
 import { quoteEmailTemplate } from "@/lib/emailTemplates";
 
@@ -51,6 +52,17 @@ export async function POST(request: Request) {
       subject: "New Product Brief / Quote Request - PearlSourceHub",
       ...quoteEmailTemplate(data, timestamp),
     });
+
+    // Save to Supabase
+    try { const adminClient = createAdminClient();
+      await adminClient.from("inquiries").insert({
+        source: "quote", name: data.name, email: data.email, company: data.company || null,
+        country: data.country, product_category: data.productCategory,
+        target_market: data.targetMarket || null, estimated_order_quantity: data.estimatedOrderQuantity || null,
+        oem_odm_requirement: data.oemOdmRequirement || null, current_stage: data.currentStage,
+        main_concern: data.mainConcern, target_price: data.targetPrice || null, message: data.message,
+      });
+    } catch { /* non-critical */ }
 
     return NextResponse.json({ success: true });
   } catch {
