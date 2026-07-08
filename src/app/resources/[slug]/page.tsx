@@ -9,6 +9,8 @@ import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
+export const dynamic = "force-dynamic";
+
 // Static article slugs that already exist as static pages — skip CMS lookup
 const STATIC_SLUGS = [
   "how-to-hire-a-reliable-china-product-sourcing-agent-in-2026",
