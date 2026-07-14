@@ -16,6 +16,7 @@ const featuredResources = [
 
 const resourceCategories = [
   { category: "Supplier Verification", resources: [
+    { title: "You Think You Are Choosing a Supplier, But the Supplier Is Screening You", problem: "Want to understand how serious suppliers evaluate buyers before quoting?", format: "Guide", href: "/resources/you-think-you-are-choosing-a-supplier-but-the-supplier-is-screening-you" },
     { title: "Selecting the Right Guangdong Sourcing Service: A Pro Guide", problem: "Not sure how to evaluate and choose a Guangdong sourcing service?", format: "Guide", href: "/resources/guangdong-sourcing-service" },
     { title: "A Complete Guide to Hiring a China Sourcing Agent for Dropshipping", problem: "Running a dropshipping store and need a reliable China sourcing agent?", format: "Guide", href: "/resources/china-sourcing-agent-dropshipping" },
     { title: "How to Hire a Reliable China Product Sourcing Agent in 2026", problem: "Looking for a sourcing agent but not sure how to evaluate and verify them?", format: "Guide", href: "/resources/how-to-hire-a-reliable-china-product-sourcing-agent-in-2026" },

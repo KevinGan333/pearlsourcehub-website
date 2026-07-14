@@ -19,6 +19,7 @@ export const resourceDetailPages = [
   { path: "/resources/china-factory-audit-checklist-for-importers", priority: 0.7, changefreq: "monthly" as const },
   { path: "/resources/china-sourcing-agent-dropshipping", priority: 0.7, changefreq: "monthly" as const },
   { path: "/resources/guangdong-sourcing-service", priority: 0.7, changefreq: "monthly" as const },
+  { path: "/resources/you-think-you-are-choosing-a-supplier-but-the-supplier-is-screening-you", priority: 0.7, changefreq: "monthly" as const },
 ];
 
 export const locationPages = [
