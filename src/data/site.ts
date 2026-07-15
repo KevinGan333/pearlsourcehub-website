@@ -8,16 +8,17 @@ export const siteConfig = {
   phoneHref: "tel:+16467931609",
   whatsapp: "+1 646 793 1609",
   whatsappHref: "https://wa.me/16467931609",
-  location: "Shenzhen, Guangdong, China",
-  locationDetail: "Covering all six Pearl River Delta cities",
+  location: "Room 309, Building 2, Juhan Commercial Center, No. 16 Tianbao Road, Guancheng Subdistrict, Guancheng District, Dongguan City, Guangdong Province",
+  locationDetail: "Pearl River Delta sourcing partner covering all six manufacturing cities",
   responseTime: "Within 24 hours during business days, China Standard Time (UTC+8)",
   social: {
     tiktok: "https://www.tiktok.com/@kevin.kan001?_r=1&_t=ZT-97OclGjTxIT",
     facebook: "https://www.facebook.com/share/1CyuAezK79/?mibextid=wwXIfr",
   },
   address: {
-    locality: "Shenzhen",
-    region: "Guangdong",
-    country: "China",
+    streetAddress: "Room 309, Building 2, Juhan Commercial Center, No. 16 Tianbao Road",
+    addressLocality: "Dongguan City",
+    addressRegion: "Guangdong Province",
+    addressCountry: "CN",
   },
 } as const;

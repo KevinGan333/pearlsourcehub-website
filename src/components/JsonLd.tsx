@@ -10,9 +10,10 @@ export function OrganizationJsonLd() {
     telephone: siteConfig.phone,
     address: {
       "@type": "PostalAddress",
-      addressLocality: siteConfig.address.locality,
-      addressRegion: siteConfig.address.region,
-      addressCountry: siteConfig.address.country,
+      streetAddress: siteConfig.address.streetAddress,
+      addressLocality: siteConfig.address.addressLocality,
+      addressRegion: siteConfig.address.addressRegion,
+      addressCountry: siteConfig.address.addressCountry,
     },
     sameAs: [siteConfig.social.tiktok, siteConfig.social.facebook],
   };
