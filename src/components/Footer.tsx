@@ -45,24 +45,34 @@ export default function Footer() {
 
   return (
     <footer className="border-t border-slate-800 bg-slate-900 text-white">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-6">
-          {/* Brand + Contact */}
-          <div className="lg:col-span-1">
+      <div className="mx-auto max-w-7xl px-4 pt-16 pb-8 sm:px-6 lg:px-8 lg:pt-[72px] lg:pb-8">
+        {/* Main grid: brand column wider, then 5 link columns */}
+        <div
+          className="grid gap-y-10 gap-x-8 sm:gap-x-10 lg:gap-x-12"
+          style={{
+            gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))",
+          }}
+        >
+          {/* Brand + Contact — takes more space via minmax on larger screens */}
+          <div className="sm:col-span-2 lg:col-span-2 lg:min-w-[280px] lg:max-w-[380px]">
             <Link href="/" className="inline-flex items-center">
               <Image
                 src="/brand/pearlsourcehub-logo-official-footer.svg"
                 alt="PearlSourceHub"
                 width={895}
                 height={292}
-                className="w-[200px] sm:w-[250px] lg:w-[280px] h-auto max-h-[90px] object-contain"
+                className="w-[200px] sm:w-[250px] lg:w-[270px] h-auto max-h-[80px] object-contain"
               />
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-slate-400">
               {siteConfig.description}
             </p>
-            <div className="mt-4 space-y-1.5">
-              <a href={`mailto:${siteConfig.email}`} className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors">
+            <div className="mt-4 space-y-2">
+              <a
+                href={`mailto:${siteConfig.email}`}
+                className="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors break-all"
+                style={{ overflowWrap: "anywhere", wordBreak: "break-word" }}
+              >
                 <svg className="h-4 w-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>
                 {siteConfig.email}
               </a>
@@ -85,12 +95,12 @@ export default function Footer() {
 
           {/* Link columns */}
           {Object.entries(footerLinks).map(([title, links]) => (
-            <div key={title}>
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-300">{title}</h3>
-              <ul className="mt-4 space-y-2">
+            <div key={title} className="min-w-[140px]">
+              <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-300 mb-4">{title}</h3>
+              <ul className="space-y-2.5">
                 {links.map((link) => (
                   <li key={link.label}>
-                    <Link href={link.href} className="text-sm text-slate-400 transition-colors hover:text-white">{link.label}</Link>
+                    <Link href={link.href} className="text-sm text-slate-400 transition-colors hover:text-white leading-relaxed">{link.label}</Link>
                   </li>
                 ))}
               </ul>
@@ -98,7 +108,8 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="mt-12 border-t border-slate-800 pt-8 flex flex-col items-center justify-between gap-4 sm:flex-row">
+        {/* Bottom bar */}
+        <div className="mt-14 pt-8 border-t border-slate-800 flex flex-col items-center justify-between gap-4 sm:flex-row">
           <p className="text-sm text-slate-500">&copy; {currentYear} {siteConfig.name}. All rights reserved.</p>
           <p className="text-sm text-slate-500">Shenzhen &bull; Dongguan &bull; Guangzhou &bull; Foshan &bull; Zhongshan &bull; Huizhou</p>
         </div>

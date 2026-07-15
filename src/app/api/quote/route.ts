@@ -47,8 +47,8 @@ export async function POST(request: Request) {
     const timestamp = new Date().toISOString().replace("T", " ").slice(0, 19) + " UTC";
 
     await resend.emails.send({
-      from: process.env.LEAD_FROM_EMAIL || "PearlSourceHub <noreply@pearlsourcehub.com>",
-      to: process.env.LEAD_TO_EMAIL || "hello@pearlsourcehub.com",
+      from: process.env.LEAD_FROM_EMAIL || "PearlSourceHub <noreply@pearlcourcehub.com>",
+      to: process.env.LEAD_TO_EMAIL || "kevin.gan@pearlcourcehub.com",
       subject: "New Product Brief / Quote Request - PearlSourceHub",
       ...quoteEmailTemplate(data, timestamp),
     });

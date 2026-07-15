@@ -3,7 +3,7 @@ export const siteConfig = {
   domain: "https://www.pearlsourcehub.com",
   description:
     "Pearl River Delta sourcing partner for product brands and hardware teams.",
-  email: "hello@pearlsourcehub.com",
+  email: "kevin.gan@pearlcourcehub.com",
   phone: "+1 646 793 1609",
   phoneHref: "tel:+16467931609",
   whatsapp: "+1 646 793 1609",

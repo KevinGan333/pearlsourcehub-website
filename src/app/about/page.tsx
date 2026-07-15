@@ -77,7 +77,7 @@ export default function AboutPage() {
           <div className="flex flex-wrap justify-center gap-2 mb-8">
             {["📍 Shenzhen — Headquarters", "📍 Dongguan — Mold & Hardware Hub", "📍 Guangzhou — Office", "📍 Zhongshan — Lighting Hub", "📍 Foshan — Furniture Hub", "📍 Huizhou — Battery & Audio Hub"].map((l) => (<span key={l} className="rounded-full bg-slate-100 px-3 py-1.5 text-sm font-medium text-slate-600">{l}</span>))}
           </div>
-          <p className="text-slate-500 mb-6">Contact us at <a href="mailto:hello@pearlsourcehub.com" className="text-amber-600 hover:text-amber-700 font-medium">hello@pearlsourcehub.com</a></p>
+          <p className="text-slate-500 mb-6">Contact us at <a href="mailto:kevin.gan@pearlcourcehub.com" className="text-amber-600 hover:text-amber-700 font-medium">kevin.gan@pearlcourcehub.com</a></p>
           <Link href="/quote" className="inline-flex items-center justify-center rounded-lg bg-amber-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-amber-500 transition-colors">Upload Your Product Brief</Link>
         </div>
       </section>
