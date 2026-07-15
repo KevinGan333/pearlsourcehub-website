@@ -27,7 +27,7 @@ Copy `.env.local.example` to `.env.local` and fill in:
 NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJ...
 SUPABASE_SERVICE_ROLE_KEY=eyJ...
-ADMIN_ALLOWED_EMAILS=kevin.gan@pearlcourcehub.com,admin2@example.com
+ADMIN_ALLOWED_EMAILS=kevin.gan@pearlsourcehub.com,admin2@example.com
 ```
 
 In Vercel, add these as environment variables (Settings > Environment Variables).

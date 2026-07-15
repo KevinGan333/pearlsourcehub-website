@@ -12,7 +12,7 @@ npm run build     # Must compile TypeScript and generate all static pages
 - [x] `.env.local.example` created and committed
 - [ ] `.env.local` created locally (never commit)
 - [ ] `RESEND_API_KEY` set in `.env.local` and Vercel
-- [ ] `LEAD_TO_EMAIL` set to `kevin.gan@pearlcourcehub.com`
+- [ ] `LEAD_TO_EMAIL` set to `kevin.gan@pearlsourcehub.com`
 - [ ] `LEAD_FROM_EMAIL` verified domain in Resend dashboard
 - [ ] `NEXT_PUBLIC_SITE_URL` set to `https://www.pearlsourcehub.com`
 
@@ -31,8 +31,8 @@ npm run build     # Must compile TypeScript and generate all static pages
 ### Vercel Environment Variables
 ```
 RESEND_API_KEY=re_xxxxxxxxxxxx
-LEAD_TO_EMAIL=kevin.gan@pearlcourcehub.com
-LEAD_FROM_EMAIL=PearlSourceHub <noreply@pearlcourcehub.com>
+LEAD_TO_EMAIL=kevin.gan@pearlsourcehub.com
+LEAD_FROM_EMAIL=PearlSourceHub <noreply@pearlsourcehub.com>
 NEXT_PUBLIC_SITE_URL=https://www.pearlsourcehub.com
 ```
 
