@@ -184,6 +184,15 @@ export default function ArticlePage() {
         </div>
       </article>
 
+      <div className="mt-14 pt-10 border-t border-slate-200">
+        <h2 className="text-xl font-bold text-slate-900 mb-5">Related Resources</h2>
+        <div className="grid gap-3 sm:grid-cols-2">
+          <Link href="/resources/why-top-tier-suppliers-wont-work-with-you-without-a-sample-order" className="rounded-lg border border-slate-200 bg-white shadow-sm p-4 text-sm font-medium text-slate-700 hover:border-amber-200 hover:text-amber-600 transition-colors">You Don&apos;t Even Have a Sample Order—Why Would a Top-Tier Supplier Agree to Work with You? →</Link>
+          <Link href="/resources/you-think-you-are-choosing-a-supplier-but-the-supplier-is-screening-you" className="rounded-lg border border-slate-200 bg-white shadow-sm p-4 text-sm font-medium text-slate-700 hover:border-amber-200 hover:text-amber-600 transition-colors">You Think You Are Choosing a Supplier, But the Supplier Is Screening You →</Link>
+          <Link href="/resources/guangdong-sourcing-service" className="rounded-lg border border-slate-200 bg-white shadow-sm p-4 text-sm font-medium text-slate-700 hover:border-amber-200 hover:text-amber-600 transition-colors">Selecting the Right Guangdong Sourcing Service: A Pro Guide →</Link>
+        </div>
+      </div>
+
       <CTASection
         title="Ready to Hire the Right Sourcing Partner?"
         description="Upload your product brief and get a verified supplier direction before you commit to production."
