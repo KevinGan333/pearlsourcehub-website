@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import Breadcrumb from "@/components/Breadcrumb";
@@ -128,6 +129,15 @@ export default function ArticlePage() {
         <P>But once you get this system up and running, you&apos;ll understand that the real certainty in foreign trade lies not in the customers, but in the supply chain.</P>
 
       </div></article>
+
+      <div className="mt-14 pt-10 border-t border-slate-200">
+        <h2 className="text-xl font-bold text-slate-900 mb-5">Related Resources</h2>
+        <div className="grid gap-3 sm:grid-cols-2">
+          <Link href="/resources/why-top-tier-suppliers-wont-work-with-you-without-a-sample-order" className="rounded-lg border border-slate-200 bg-white shadow-sm p-4 text-sm font-medium text-slate-700 hover:border-amber-200 hover:text-amber-600 transition-colors">You Don&apos;t Even Have a Sample Order—Why Would a Top-Tier Supplier Agree to Work with You? →</Link>
+          <Link href="/resources/how-to-hire-a-reliable-china-product-sourcing-agent-in-2026" className="rounded-lg border border-slate-200 bg-white shadow-sm p-4 text-sm font-medium text-slate-700 hover:border-amber-200 hover:text-amber-600 transition-colors">How to Hire a Reliable China Product Sourcing Agent in 2026 →</Link>
+          <Link href="/resources/guangdong-sourcing-service" className="rounded-lg border border-slate-200 bg-white shadow-sm p-4 text-sm font-medium text-slate-700 hover:border-amber-200 hover:text-amber-600 transition-colors">Selecting the Right Guangdong Sourcing Service: A Pro Guide →</Link>
+        </div>
+      </div>
 
       <CTASection title="Need to approach serious suppliers with a clearer sourcing plan?" description={`${siteConfig.name} helps overseas buyers prepare product briefs, verify suppliers, compare factory quotes, validate samples, and reduce sourcing risk across the Pearl River Delta.`} primaryButtonLabel="Upload Your Product Brief" primaryButtonHref="/quote" secondaryButtonLabel="Talk to a Sourcing Specialist" secondaryButtonHref="/contact" />
     </>
